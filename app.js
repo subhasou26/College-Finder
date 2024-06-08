@@ -26,10 +26,8 @@ app.use(express.urlencoded({ extended: true }));
 app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
+
 app.get("/", (req, res) => {
-  res.send("hello");
-});
-app.get("/search", (req, res) => {
   res.render("listings/search.ejs");
 });
 app.post("/search", async (req, res) => {
