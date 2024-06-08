@@ -1,0 +1,193 @@
+<%layout("/layouts/boilerplate")%>
+<body>
+  <div class="row">
+    <div class="col-8 offset-2">
+      <h3>Input your rank data</h3>
+      <br />
+      <form action="/search" method="POST" class="needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="round" class="form-lable">Round</label>
+          <select
+            class="form-select form-control"
+            type="text"
+            name="listing[round]"
+            required
+          >
+            <option selected>Choose...</option>
+            <option value="Round 1">One</option>
+            <option value="Round 2">Two</option>
+            <option value="Round 3">Three</option>
+          </select>
+          <div class="valid-feedback">Looks Good!</div>
+          <div class="invalid-feedback">Give Title</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="category" class="form-lable">Category</label>
+          <select
+            class="form-select form-control"
+            type="text"
+            name="listing[category]"
+            required
+          >
+            <option selected>Choose...</option>
+            <option value="Open">Open</option>
+            <option value="SC">SC</option>
+            <option value="OBC-A">OBC-A</option>
+            <option value="OBC-B">OBC-B</option>
+            <option value="ST">ST</option>
+            <option value="Tuition Fee Waiver">Tuition Fee Waiver</option>
+          </select>
+          <div class="valid-feedback">Looks Good!</div>
+          <div class="invalid-feedback">Give Title</div>
+        </div>
+
+    
+        <div class="mb-3">
+          <label for="institite" class="form-lable">Institute</label>
+          <select
+            class="form-select form-control"
+            type="text"
+            name="listing[institute]"
+            required
+          >
+          <option selected="selected" value="0">--- All Institute ---</option>
+          <option value="Sister Nivedita University, New Town">Sister Nivedita University, New Town</option>
+          <option value="Institute of Engineering &amp; Management Kolkata, University of Engineering &amp; Management Kolkata">Institute of Engineering &amp; Management Kolkata, University of Engineering &amp; Management Kolkata</option>
+          <option value="Bharat Technology, Uluberia, Howrah">Bharat Technology, Uluberia, Howrah</option>
+          <option value="Gupta College of Technological Sciences, Asansol, Burdwan">Gupta College of Technological Sciences, Asansol, Burdwan</option>
+          <option value="Birbhum Pharmacy School, Hetampur, Birbhum">Birbhum Pharmacy School, Hetampur, Birbhum</option>
+          <option value="School of Pharmacy, Techno India University, Salt Lake">School of Pharmacy, Techno India University, Salt Lake</option>
+          <option value="Ramkrishna Mahato Government Engineering College, Purulia">Ramkrishna Mahato Government Engineering College, Purulia</option>
+          <option value="Jalpaiguri Goverment Engineering College,Jalpaiguri">Jalpaiguri Goverment Engineering College,Jalpaiguri</option>
+          <option value="Swami Vivekananda University">Swami Vivekananda University</option>
+          <option value="Guru Nanak Institute of Pharmaceutical Science and Technology, Sodepur">Guru Nanak Institute of Pharmaceutical Science and Technology, Sodepur</option>
+          <option value="Cooch Behar Government Engineering College, Cooch Behar">Cooch Behar Government Engineering College, Cooch Behar</option>
+          <option value="Jadavpur University">Jadavpur University</option>
+          <option value="Govt. College of Engineering &amp; Textile Technology, Serampore">Govt. College of Engineering &amp; Textile Technology, Serampore</option>
+          <option value="Govt. College of Engg. &amp; Textile Technology, Berhampore">Govt. College of Engg. &amp; Textile Technology, Berhampore</option>
+          <option value="Swami Vivekananda Institute of Science &amp; Technology, Sonarpur">Swami Vivekananda Institute of Science &amp; Technology, Sonarpur</option>
+          <option value="Academy of Technology, Adisaptagram, Hooghly">Academy of Technology, Adisaptagram, Hooghly</option>
+          <option value="St. Mary&#39;s Technical Campus Kolkata, Barasat">St. Mary&#39;s Technical Campus Kolkata, Barasat</option>
+          <option value="Heritage Institute of Technology, Kolkata">Heritage Institute of Technology, Kolkata</option>
+          <option value="Haldia Institute of Technology, Haldia, Purba Medinipur">Haldia Institute of Technology, Haldia, Purba Medinipur</option>
+          <option value="Meghnad Saha Institute of Technology, Kolkata">Meghnad Saha Institute of Technology, Kolkata</option>
+          <option value="Rcc Institute of Information Technology, Kolkata">Rcc Institute of Information Technology, Kolkata</option>
+          <option value="Hooghly Engineering &amp; Technology College, Hooghly">Hooghly Engineering &amp; Technology College, Hooghly</option>
+          <option value="Sanaka Education Trusts Group of Institutions, Durgapur, Burdwan">Sanaka Education Trusts Group of Institutions, Durgapur, Burdwan</option>
+          <option value="Asansol Engineering College, Asansol, Burdwan">Asansol Engineering College, Asansol, Burdwan</option>
+          <option value="Seacom Engineering College, Sankrail, Howrah">Seacom Engineering College, Sankrail, Howrah</option>
+          <option value="Techno Main Salt Lake, Sector-V, Salt Lake">Techno Main Salt Lake, Sector-V, Salt Lake</option>
+          <option value="Ghani Khan Choudhury Institute of Engineering &amp; Technology, Malda">Ghani Khan Choudhury Institute of Engineering &amp; Technology, Malda</option>
+          <option value="ALIPURDUAR GOVERNMENT ENGINEERING AND MANAGEMENT COLLEGE">ALIPURDUAR GOVERNMENT ENGINEERING AND MANAGEMENT COLLEGE</option>
+          <option value="Kalyani Goverment Engineering College, Kalyani, Nadia">Kalyani Goverment Engineering College, Kalyani, Nadia</option>
+          <option value="Mckv Institute of Engineering, Liluah, Howrah ">Mckv Institute of Engineering, Liluah, Howrah </option>
+          <option value="University Of Calcutta">University Of Calcutta</option>
+          <option value="Budge Budge Institute of Technology, Budge-Budge">Budge Budge Institute of Technology, Budge-Budge</option>
+          <option value="Dmbh Institute Of Medical Science, Hooghly ">Dmbh Institute Of Medical Science, Hooghly&#160;</option>
+          <option value="Netaji Subhash Chandra Bose Institute of Pharmacy ,Chakdah, Nadia">Netaji Subhash Chandra Bose Institute of Pharmacy ,Chakdah, Nadia</option>
+          <option value="Eminent College of Pharmaceutical Technology, Barasat">Eminent College of Pharmaceutical Technology, Barasat</option>
+          <option value="Adamas University, Barasat">Adamas University, Barasat</option>
+          <option value="PANDAVESWAR SCHOOL OF PHARMACY">PANDAVESWAR SCHOOL OF PHARMACY</option>
+          <option value="Bengal School of Technology, Sugandha, Hooghly">Bengal School of Technology, Sugandha, Hooghly</option>
+          <option value="Calcutta Institute of Engineering &amp; Management, Tollygunge, Kolkata">Calcutta Institute of Engineering &amp; Management, Tollygunge, Kolkata</option>
+          <option value="Dr.Sudhir Chandra Sur Institute of Technology and Sports Complex, Dum Dum">Dr.Sudhir Chandra Sur Institute of Technology and Sports Complex, Dum Dum</option>
+          <option value="Modern Institute of Engineering &amp; Technology, Bandel, Hooghly">Modern Institute of Engineering &amp; Technology, Bandel, Hooghly</option>
+          <option value="Imps College of Engineering &amp; Technology, Malda">Imps College of Engineering &amp; Technology, Malda</option>
+          <option value="Mallabhum Institute of Technology, Bishnupur, Bankura">Mallabhum Institute of Technology, Bishnupur, Bankura</option>
+          <option value="University Institute of Technology, Burdwan (Self Financing Course)">University Institute of Technology, Burdwan (Self Financing Course)</option>
+          <option value="University of Kalyani, Science Instrumentation Centre">University of Kalyani, Science Instrumentation Centre</option>
+          <option value="Bidhan Chandra Krishi Viswa Vidyalaya, Mohanpur, Nadia">Bidhan Chandra Krishi Viswa Vidyalaya, Mohanpur, Nadia</option>
+          <option value="Jis College of Engineering, Kalyani, Nadia">Jis College of Engineering, Kalyani, Nadia</option>
+          <option value="Jis University, Agarpara">Jis University, Agarpara</option>
+          <option value="Future Institute of Technology, Boral, Garia">Future Institute of Technology, Boral, Garia</option>
+          <option value="Elitte College of Engineering,Mahispota, Sodepur">Elitte College of Engineering,Mahispota, Sodepur</option>
+          <option value="College of Engineering and Management, Kolaghat">College of Engineering and Management, Kolaghat</option>
+          <option value="Techno International Batanagar">Techno International Batanagar</option>
+          <option value="Bengal College of Engineering &amp; Technology, Durgapur">Bengal College of Engineering &amp; Technology, Durgapur</option>
+          <option value="Narula Institute of Technology, Agarpara, Kolkata">Narula Institute of Technology, Agarpara, Kolkata</option>
+          <option value="Bengal Institute of Technology &amp; Management, Santiniketan">Bengal Institute of Technology &amp; Management, Santiniketan</option>
+          <option value="Dr. B. C. Roy Engineering College, Durgapur">Dr. B. C. Roy Engineering College, Durgapur</option>
+          <option value="Bengal Institute of Technology, Dhapa, Kolkata">Bengal Institute of Technology, Dhapa, Kolkata</option>
+          <option value="Future Institute of Engineering &amp; Management, Sonarpur">Future Institute of Engineering &amp; Management, Sonarpur</option>
+          <option value="Guru Nanak Institute of Technology, Panihati, Sodepur">Guru Nanak Institute of Technology, Panihati, Sodepur</option>
+          <option value="Gargi Memorial Institute of Technology, Baruipur, Kolkata">Gargi Memorial Institute of Technology, Baruipur, Kolkata</option>
+          <option value="Durgapur Institute of Advanced Technology &amp; Management, Durgapur">Durgapur Institute of Advanced Technology &amp; Management, Durgapur</option>
+          <option value="Om Dayal Group of Institutions, Uluberia, Howrah">Om Dayal Group of Institutions, Uluberia, Howrah</option>
+          <option value="Bengal College of Pharmaceutical Science &amp; Research, Durgapur">Bengal College of Pharmaceutical Science &amp; Research, Durgapur</option>
+          <option value="Pailan College of Management &amp; Technology, Pailan Park">Pailan College of Management &amp; Technology, Pailan Park</option>
+          <option value="Camellia Institute of Technology &amp; Management, Bainchi, Hooghly">Camellia Institute of Technology &amp; Management, Bainchi, Hooghly</option>
+          <option value="P.G. Institute of Medical Sciences, Chandrakona">P.G. Institute of Medical Sciences, Chandrakona</option>
+          <option value="Bengal College of Pharmaceutical Technology, Dubrajpur, Birbhum">Bengal College of Pharmaceutical Technology, Dubrajpur, Birbhum</option>
+          <option value="Techno India University, Salt Lake">Techno India University, Salt Lake</option>
+          <option value="Ideal Institute of Engineering, Kalyani">Ideal Institute of Engineering, Kalyani</option>
+          <option value="Netaji Subhas Engineering College, Garia, Kolkata">Netaji Subhas Engineering College, Garia, Kolkata</option>
+          <option value="Nshm Knowledge Campus, Durgapur Group of Institutions">Nshm Knowledge Campus, Durgapur Group of Institutions</option>
+          <option value="Regent Education and Research Foundation, Barasat, Kolkata">Regent Education and Research Foundation, Barasat, Kolkata</option>
+          <option value="Uttar Banga Krishi Viswa Vidyalaya">Uttar Banga Krishi Viswa Vidyalaya</option>
+          <option value="Govt. College of Engineering &amp; Ceramic Technology, Kolkata">Govt. College of Engineering &amp; Ceramic Technology, Kolkata</option>
+          <option value="Siliguri Institute of Technology, Siliguri">Siliguri Institute of Technology, Siliguri</option>
+          <option value="Goverment College of Engineering and Leather Technology, Kolkata">Goverment College of Engineering and Leather Technology, Kolkata</option>
+          <option value="Supreme Knowledge Foundation Group of Institutions, Mankundu, Hooghly">Supreme Knowledge Foundation Group of Institutions, Mankundu, Hooghly</option>
+          <option value="JAKIR HOSSAIN INSTITUTE OF PHARMACY">JAKIR HOSSAIN INSTITUTE OF PHARMACY</option>
+          <option value="Gitanjali College of Pharmacy, Lohapur, Birbhum">Gitanjali College of Pharmacy, Lohapur, Birbhum</option>
+          <option value="Haldia Institute of Pharmacy, Haldia">Haldia Institute of Pharmacy, Haldia</option>
+          <option value="BCDA COLLEGE OF PHARMACY &amp; TECHNOLOGY, CAMPUS-2">BCDA COLLEGE OF PHARMACY &amp; TECHNOLOGY, CAMPUS-2</option>
+          <option value="Techno Engineering Collge Banipur, 24 Parganas-North">Techno Engineering Collge Banipur, 24 Parganas-North</option>
+          <option value="Calcutta Institute of Technology, Uluberia, Howrah">Calcutta Institute of Technology, Uluberia, Howrah</option>
+          <option value="Techno International New Town, Rajarhat, New Town">Techno International New Town, Rajarhat, New Town</option>
+          <option value="Institute of Science and Technology, Paschim Medinipur">Institute of Science and Technology, Paschim Medinipur</option>
+          <option value="Aliah University, New Town">Aliah University, New Town</option>
+          <option value="Seacom Skills University, Bolpur">Seacom Skills University, Bolpur</option>
+          <option value="Dream Institute of Technology, Bishnupur, 24-Parganas-South">Dream Institute of Technology, Bishnupur, 24-Parganas-South</option>
+          <option value="Dumkal Institute of Engineering &amp; Technology, Dumkal, Murshidabad">Dumkal Institute of Engineering &amp; Technology, Dumkal, Murshidabad</option>
+          <option value="Maulana Abul Kalam Azad University of Technology, West Bengal">Maulana Abul Kalam Azad University of Technology, West Bengal</option>
+          <option value="Camellia Institute of Technology, Badu Road, Madhyamgram">Camellia Institute of Technology, Badu Road, Madhyamgram</option>
+          <option value="Murshidabad College of Engineering &amp; Technology, Murshidabad">Murshidabad College of Engineering &amp; Technology, Murshidabad</option>
+          <option value="Camellia School of Engineering &amp; Technology, Barasat">Camellia School of Engineering &amp; Technology, Barasat</option>
+          <option value="St. Thomas College of Engineering &amp; Technology, Khidirpur, Kolkata">St. Thomas College of Engineering &amp; Technology, Khidirpur, Kolkata</option>
+          <option value="Bcda College of Pharmacy &amp; Technology, Hridaypur, Madhyamgram">Bcda College of Pharmacy &amp; Technology, Hridaypur, Madhyamgram</option>
+          <option value="EAST WEST EDUCATION INSTITUTE">EAST WEST EDUCATION INSTITUTE</option>
+          <option value="Institute of Pharmacy, Jalpaiguri">Institute of Pharmacy, Jalpaiguri</option>
+          <option value="Dr. B. C. Roy  College of Pharmacy and Allied Health Sciences, Durgapur">Dr. B. C. Roy  College of Pharmacy and Allied Health Sciences, Durgapur</option>
+          <option value="Kaji Nazrul University, Asansol">Kaji Nazrul University, Asansol</option>
+          <option value="B.P. Poddar Institute of Management &amp; Technology, Kolkata">B.P. Poddar Institute of Management &amp; Technology, Kolkata</option>
+          <option value="Anand College of Education, Debra, Paschim Medinipur">Anand College of Education, Debra, Paschim Medinipur</option>
+          <option value="Calcutta Institute of Pharmaceutical Tech. &amp; Allied Health Sciences, Uluberia">Calcutta Institute of Pharmaceutical Tech. &amp; Allied Health Sciences, Uluberia</option>
+          <option value="West Bengal University of Animal &amp; Fishery Sciences">West Bengal University of Animal &amp; Fishery Sciences</option>
+          <option value="Abacus Institute of Engineering &amp; Management, Mogra, Hooghly">Abacus Institute of Engineering &amp; Management, Mogra, Hooghly</option>
+          <option value="Bankura Unnayani Institute of Engineering, Bankura">Bankura Unnayani Institute of Engineering, Bankura</option>
+          <option value="Birbhum Institute of Engineering &amp; Technology, Suri, Birbhum">Birbhum Institute of Engineering &amp; Technology, Suri, Birbhum</option>
+          <option value="Nshm Knowledge Campus, Kolkata Group of Institutions, Kolkata">Nshm Knowledge Campus, Kolkata Group of Institutions, Kolkata</option>
+          <option value="M.R. Collge of Pharmaceitical Science and Research, Bira,  Ashoknagar">M.R. Collge of Pharmaceitical Science and Research, Bira,  Ashoknagar</option>
+          <option value="RASHBEHARI PHARMACEUTICAL INSTITUTE">RASHBEHARI PHARMACEUTICAL INSTITUTE</option>
+          <option value="Hemnalini Memorial College of Engineering, Haringhata">Hemnalini Memorial College of Engineering, Haringhata</option>
+          <option value="Camellia Institute of Engineering and Technology, Bud Bud, Burdwan">Camellia Institute of Engineering and Technology, Bud Bud, Burdwan</option>
+          <option value="Greater Kolkata College of Engineering &amp; Management, Baruipur">Greater Kolkata College of Engineering &amp; Management, Baruipur</option>
+          <option value="Global Institute of Management and Technology, Krishnanagar, Nadia">Global Institute of Management and Technology, Krishnanagar, Nadia</option>
+          <option value="Jld Engineering and Management College, Baruipur">Jld Engineering and Management College, Baruipur</option>
+          <option value="Kanad Institute of Engineering &amp; Management, Mankar, Burdwan">Kanad Institute of Engineering &amp; Management, Mankar, Burdwan</option>
+        
+          </select>
+          <div class="valid-feedback">Looks Good!</div>
+          <div class="invalid-feedback">Give Title</div>
+        </div>
+        
+        
+        <div class="mb-3 col-4">
+          <label for="rank" class="form-lable">Your Rank</label>
+          <input
+            type="number"
+            name="listing[rank]"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">Enter valid Price</div>
+        </div>
+
+        <button class="btn add-btn">Search</button>
+      </form>
+      <br /><br />
+    </div>
+  </div>
+</body>

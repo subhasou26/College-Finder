@@ -1,0 +1,40 @@
+<%layout("/layouts/boilerplate")%>
+<body>
+   
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Sr_No</th>
+                <th scope="col">Round</th>
+                <th scope="col">Institute</th>
+                <th scope="col">Program</th>
+                <th scope="col">Stream</th>
+                <th scope="col">Seat_Type</th>
+                <th scope="col">Quota</th>
+                <th scope="col">Category</th>
+                <th scope="col">Opening_Rank</th>
+                <th scope="col">Closing_Rank</th>
+              </tr>
+            </thead>
+            <tbody>
+                <% for(let listing of listings){%>
+                <div>
+              <tr>
+                <th scope="row"><%=listing.Sr_No%></th>
+                <td scope="row"><%=listing.Round%></td>
+                <td scope="row"><%=listing.Institute%></td>
+                <td scope="row"><%=listing.Program%></td>
+                <td scope="row"><%=listing.Stream%></td>
+                <td scope="row"><%=listing.Seat_Type%></td>
+                <td scope="row"><%=listing.Quota%></td>
+                <td scope="row"><%=listing.Category%></td>
+                <td scope="row"><%=listing.Opening_Rank%></td>
+                <td scope="row"><%=listing.Closing_Rank%></td>
+             
+              </tr>
+            </div>
+            <% } %>
+            </tbody>
+          </table>
+      
+</body>
